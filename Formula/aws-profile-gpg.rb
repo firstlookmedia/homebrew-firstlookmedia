@@ -8,7 +8,7 @@ class AwsProfileGpg < Formula
   version "0.0.1"
 
   url "https://github.com/firstlookmedia/aws-profile-gpg/archive/0.0.1.tar.gz"
-  sha256 "471841988a7b0241819d364974f70b4b4356b6121a6817f8dd661f325d3fecd5"
+  sha256 "53245938042e5fc171f9a0a7a4121b2439a8553d4d6f38e44714cb7d0ff8f08e"
 
   head "https://github.com/firstlookmedia/aws-profile-gpg.git"
 
