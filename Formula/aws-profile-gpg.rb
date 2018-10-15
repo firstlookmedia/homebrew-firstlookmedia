@@ -2,7 +2,7 @@
 class AwsProfileGpg < Formula
   include Language::Python::Virtualenv
 
-  desc "call aws-cli using access keys from an encrypted credentials file"
+  desc "Run aws-cli commands using IAM Access Keys stored in a GPG encrypted credentials file"
   homepage "https://github.com/firstlookmedia/aws-profile-gpg"
 
   version "0.0.1"
