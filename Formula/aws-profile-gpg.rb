@@ -5,7 +5,7 @@ class AwsProfileGpg < Formula
   desc "Run aws-cli commands using IAM Access Keys stored in a GPG encrypted credentials file"
   homepage "https://github.com/firstlookmedia/aws-profile-gpg"
 
-  version "0.0.1"
+  version "0.0.2"
 
   url "https://github.com/firstlookmedia/aws-profile-gpg/archive/0.0.1.tar.gz"
   sha256 "53245938042e5fc171f9a0a7a4121b2439a8553d4d6f38e44714cb7d0ff8f08e"
@@ -21,8 +21,8 @@ class AwsProfileGpg < Formula
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/f6/6f/8df979ecb0aeaf82a62dc561c243405bf4f5264833a2c5463576172df596/botocore-1.12.23.tar.gz"
-    sha256 "e19d83d787575644e5c52654a979b931f198394ad1b27412b7d37ce6cbbc3c6e"
+    url "https://files.pythonhosted.org/packages/8e/b3/b9f7ffa347057fa44c65197864eec6a8a53f5a24f613b1b7b3f2b755cc65/botocore-1.12.86.tar.gz"
+    sha256 "24444e7580f0114c3e9fff5d2032c6f0cfbf88691b1be3ba27c6922507a902ec"
   end
 
   resource "docutils" do
@@ -36,18 +36,18 @@ class AwsProfileGpg < Formula
   end
 
   resource "python-dateutil" do
-    url "https://files.pythonhosted.org/packages/a0/b0/a4e3241d2dee665fea11baec21389aec6886655cd4db7647ddf96c3fad15/python-dateutil-2.7.3.tar.gz"
-    sha256 "e27001de32f627c22380a688bcc43ce83504a7bc5da472209b4c70f02829f0b8"
+    url "https://files.pythonhosted.org/packages/0e/01/68747933e8d12263d41ce08119620d9a7e5eb72c876a3442257f74490da0/python-dateutil-2.7.5.tar.gz"
+    sha256 "88f9287c0174266bb0d8cedd395cfba9c58e87e5ad86b2ce58859bc11be3cf02"
   end
 
   resource "six" do
-    url "https://files.pythonhosted.org/packages/16/d8/bc6316cf98419719bd59c91742194c111b6f2e85abac88e496adefaf7afe/six-1.11.0.tar.gz"
-    sha256 "70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9"
+    url "https://files.pythonhosted.org/packages/dd/bf/4138e7bfb757de47d1f4b6994648ec67a51efe58fa907c1e11e350cddfca/six-1.12.0.tar.gz"
+    sha256 "d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/3c/d2/dc5471622bd200db1cd9319e02e71bc655e9ea27b8e0ce65fc69de0dac15/urllib3-1.23.tar.gz"
-    sha256 "a68ac5e15e76e7e5dd2b8f94007233e01effe3e50e8daddf69acfd81cb686baf"
+    url "https://files.pythonhosted.org/packages/b1/53/37d82ab391393565f2f831b8eedbffd57db5a718216f82f1a8b4d381a1c1/urllib3-1.24.1.tar.gz"
+    sha256 "de9529817c93f27c8ccbfead6985011db27bd0ddfcdb2d86f3f663385c6a9c22"
   end
 
   def install
