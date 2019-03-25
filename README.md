@@ -15,3 +15,8 @@ brew tap firstlookmedia/firstlookmedia
 
 - [https://github.com/firstlookmedia/aws-profile-gpg](https://github.com/firstlookmedia/aws-profile-gpg)
 - `brew install aws-profile-gpg`
+
+#### Flock Agent
+
+- [https://github.com/firstlookmedia/flock-agent](https://github.com/firstlookmedia/flock-agent)
+- `brew cask install flock-agent`
