@@ -10,14 +10,21 @@ cask 'flock-agent' do
   pkg "FlockAgent-#{version}.pkg"
 
   uninstall quit:      'media.firstlook.flock-agent',
-            pkgutil:   'media.firstlook.flock-agent',
-            pkgutil:   'com.facebook.osquery',
-            launchctl: 'media.firstlook.flock-agent',
-            delete:    '/Library/LaunchDaemons/com.facebook.osqueryd.plist',
-            delete:    '/Library/LaunchDaemons/media.firstlook.flock-agentd.plist',
-            delete:    '/private/var/log/osquery',
-            delete:    '/usr/local/etc/flock-agent',
-            delete:    '/usr/local/var/lib/flock-agent',
-            delete:    '/usr/local/var/log/flock-agent',
-            delete:    '~/Library/Application Support/Flock Agent/'
+            pkgutil:   [
+                         'media.firstlook.flock-agent',
+                         'com.facebook.osquery',
+                       ],
+            launchctl: [
+                         'media.firstlook.flock-agent',
+                         'com.facebook.osqueryd',
+                       ],
+            delete:    [
+                         '/Library/LaunchAgents/com.facebook.osqueryd.plist',
+                         '/Library/LaunchDaemons/media.firstlook.flock-agentd.plist',
+                         '/private/var/log/osquery',
+                         '/usr/local/etc/flock-agent',
+                         '/usr/local/var/lib/flock-agent',
+                         '/usr/local/var/log/flock-agent',
+                         '~/Library/Application Support/Flock Agent/',
+                       ]
 end
