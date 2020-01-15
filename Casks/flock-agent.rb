@@ -9,8 +9,6 @@ cask 'flock-agent' do
 
   pkg "FlockAgent-#{version}.pkg"
 
-  auto_updates true
-
   uninstall quit:      'media.firstlook.flock-agent',
             pkgutil:   [
                          'media.firstlook.flock-agent',
