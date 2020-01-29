@@ -1,6 +1,6 @@
 cask 'flock-agent' do
-  version '0.1.2'
-  sha256 'f0a5c6e56c0f8ce7afca9eb4c0c5bed55d86ac81d0b6ff662a578260f06266ce'
+  version '0.1.4'
+  sha256 '96a01373c940b28f4e02770ef3e7ab6377747ad7394c6f232b3b54df107c53c7'
 
   url "https://github.com/firstlookmedia/flock-agent/releases/download/v#{version}/FlockAgent-#{version}.pkg"
   appcast 'https://github.com/firstlookmedia/flock-agent/releases.atom'
@@ -8,6 +8,8 @@ cask 'flock-agent' do
   homepage 'https://github.com/firstlookmedia/flock-agent/'
 
   pkg "FlockAgent-#{version}.pkg"
+
+  auto_updates true
 
   uninstall quit:      'media.firstlook.flock-agent',
             pkgutil:   [
