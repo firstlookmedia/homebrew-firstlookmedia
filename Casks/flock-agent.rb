@@ -1,6 +1,6 @@
 cask 'flock-agent' do
-  version '0.1.4'
-  sha256 '96a01373c940b28f4e02770ef3e7ab6377747ad7394c6f232b3b54df107c53c7'
+  version '0.1.5'
+  sha256 '0edfbd402b887042c287c4d175ca43eb0f4104ea3873253607e682ea602ae6a8'
 
   url "https://github.com/firstlookmedia/flock-agent/releases/download/v#{version}/FlockAgent-#{version}.pkg"
   appcast 'https://github.com/firstlookmedia/flock-agent/releases.atom'
